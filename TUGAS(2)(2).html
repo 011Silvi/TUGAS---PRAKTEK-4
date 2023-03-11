@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h4> DOUBLE KLIK PADA KOTAK UNTUK MENGUBAH WARNA</h4>
+    <meta charset="UTF - 8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initical-scale=1.0">
+<style>
+    div{
+        background: yellow;
+        color: white;
+        height: 200px;
+        width: 200px;
+        border: solid 2px orange;
+        margin: 10px;
+        float: left;
+    }
+    div.box1{
+        background: red;
+        color: black;
+        border: solid 2px pink;
+    }
+    div.box2{
+        background: red;
+        color: black;
+        border: solid 2px pink;
+    }
+    div.box3{
+        background: red;
+        color: black;
+        border: solid 2px pink;
+    }
+    div.box4{
+        background: red;
+        color: black;
+        border: solid 2px pink;
+    }
+    
+    </style>
+    </head>
+    <body>
+       <div class="ktk1"></div>
+       <div class="ktk2"></div>
+       <div class="ktk3"></div>
+       <div class="ktk4"></div>
+       <script src="jquery-3.6.3.js"> </script>
+       <script type="text/javascript">
+        var divbox1 = $(".ktk1").ready(function(){
+            divbox1.dblclick(function(){
+                divbox1.toggleClass("box1");
+            });
+        });
+        var divbox2 = $(".ktk2").ready(function(){
+            divbox2.dblclick(function(){
+                divbox2.toggleClass("box2");
+            });
+        });
+        var divbox3 = $(".ktk3").ready(function(){
+            divbox3.dblclick(function(){
+                divbox3.toggleClass("box3");
+            });
+        });
+        var divbox4 = $(".ktk4").ready(function(){
+            divbox4.dblclick(function(){
+                divbox4.toggleClass("box4");
+            });
+        });
+        </script>
+        </body>
+        </html>

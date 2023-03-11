@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>SEMBUNYI TAMPILKAN GAMBAR JQUERY</title>
+        <script src= "jquery-3.6.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $(".sembunyi").click(function(){
+                $("#foto").hide("slow")});
+
+            $(".tampil").click(function(){
+                $("#foto").show("slow")});
+        
+        
+            $(".sembunyi2").click(function(){
+                $("#foto2").hide("slow")});
+
+            $(".tampil2").click(function(){
+                $("#foto2").show("slow")});
+       
+      
+            $(".sembunyi3").click(function(){
+                $("#foto3").hide("slow")});
+
+            $(".tampil3").click(function(){
+                $("#foto3").show("slow")});
+            });
+        </script>
+        
+    </head>
+    <style>
+        
+        a, button,input[id="hilang"],input[id="muncul"], [id="toggle"],input[id="to"]{
+        font-family: sans-serif;
+        font-size: 14px;
+        background: violet;
+        color: bl;
+        border: black 3px solid;
+        border-radius: 3px;
+        padding: 10px 15px;
+        margin-top: 8px;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    </style>
+    
+    <body>
+        <p><img id="foto" src="1.jpg" style="width: 250px; height: 250px;"></p>
+        <button class="sembunyi">SEMBUNYIKAN </button>
+        <button class="tampil"> TAMPILKAN </button>
+        <br>
+        <p><img id="foto2" src="2.jpg" style="width: 250px; height: 250px;"></p>
+        <button class="sembunyi2"> SEMBUNYIKAN </button>
+        <button class="tampil2"> TAMPILKAN </button>
+        <br>
+        <p><img id="foto3" src="3.jpg" style="width: 250px; height: 250px;"></p>
+        <button class="sembunyi3">SEMBUNYIKAN  </button>
+        <button class="tampil3"> TAMPILKAN </button>
+        </body>
+        </html>
+        
